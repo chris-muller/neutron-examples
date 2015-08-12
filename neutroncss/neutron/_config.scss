@@ -1,0 +1,84 @@
+// Configuration
+// ===============================================
+// In this file you can change the default 
+// values for variables used throughout Neutron,
+// allowing you to customise the appearance and 
+// behaviour of Neutron without needing to create 
+// your own modules or themes.
+// ---------------------------------------------
+
+// Layout Variables
+//---------------------------------------------
+
+$neutron_layout: (
+	column-padding: 4px 8px,
+	container-max-width: 960px,
+	flush-margin: true
+);
+
+// Media Query Variables
+//---------------------------------------------
+
+$neutron_query: (
+	mobile-max: 	479px,
+	phablet-max: 	767px,
+	tablet-max: 	1023px,
+	desktop-sml-max:	1199px,
+	desktop-mid-max:	1799px
+);
+
+// Color Variables
+//---------------------------------------------
+
+$neutron_color: (
+	// Primary Colours
+	primary: 	#000,
+	secondary:	#555,
+	tertiary:	#D1D1D1,
+	
+	// Text and Copy
+	copy: 			#222,
+	copy-2: #F3F3F3,
+		
+	// Links
+	link: 			#0037B1,
+	hover-link: 	#0FA0CE,
+	visited-link:	#6F0FEA,
+	active-link: 	#0037B1,
+	
+	// Button styles
+	button: 		#004C94,
+	button-hover: 	#333,
+	button-focus: 	#333,
+	button-active: #004C94,
+	
+	// Errors and Notices
+	success:	#000,
+	warning:	#000,
+	notice:		#000,
+	
+	// Border
+	border:		#888,
+	border-2:	#D1D1D1,
+	border-3: 	#E1E1E1,
+	
+	// Background
+	background: 			#FFF,
+	background-2: 	#F1F1F1,
+	background-3: 	#E1E1E1,
+	
+	// Misc
+	shadow: #000,
+	focus:	#33C3F0,
+);
+
+// Text Variables
+//---------------------------------------------
+
+$neutron_text: (
+	font-family: unquote('"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif'),
+	font-family-2: unquote('"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif'),
+	font-size: 1em,
+	line-height: 1.6,
+	font-weight: 400
+)

@@ -1,0 +1,12 @@
+// Links
+//---------------------------------------------
+
+a {
+	color: setting("color", "link");
+	text-decoration: none;
+}
+a:hover {
+	color: setting("color", "hover-link");
+	text-decoration: underline;
+}
+
