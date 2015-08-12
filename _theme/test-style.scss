@@ -1,0 +1,63 @@
+@import "../neutron/neutron";
+
+#color ul {
+	@include link-list;
+	
+	li {
+
+	}
+}
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: solid 1px #CCC;
+	margin: 16px;
+	
+	&::after, &::before {
+		//content: "color";
+		margin: 18px auto 0;
+		display: block;
+		text-align: center;
+		line-height: 1;
+		text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+		font-weight: bold;
+		white-space: nowrap;
+	}
+}
+
+@mixin circle($number, $color, $label) {
+	
+	.circle:nth-child(#{$number}) {
+		background: $color;
+		&::after {
+			content: "#{$label}";
+
+		}
+		
+		&::before {
+			content: "#{$color}";
+		}
+	}
+}
+
+$i: 0;
+@each $key, $color in $neutron_color {
+	$i: $i + 1;
+	
+	@include circle($i, $color, $key);
+}
+
+.components ul li {
+	list-style-type: none;
+}
+.forms ul li {
+	list-style-type: none;
+}
+.nav ul {
+	@include link-list;
+	
+	li {
+		@include button;
+	}
+}

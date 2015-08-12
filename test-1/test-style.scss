@@ -1,0 +1,79 @@
+@import "../neutron/neutron";
+
+// General
+img {
+	max-width: 100%;
+    height: auto;
+}
+@media #{$from-tablet} {
+	body {
+		padding: 0 1rem;
+	}
+}
+
+//Header
+header img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+@media #{$from-tablet} {
+	header img {
+		float: left;
+		margin: 0;
+	}
+}
+header ul {
+	@include link-list(right);
+	margin-bottom:0;
+	float: none;
+	text-align: center;
+    margin-top: 24px;
+	
+	li a {
+		@include button()
+	}	
+}
+@media #{$from-tablet} {
+	header ul {
+		float: right;
+	}
+}
+
+// Content
+#main-image {
+	margin: 12px 0;
+	padding-bottom: 12px;
+	border-bottom: 1px solid setting('color', 'border-2');
+}
+
+#content-1, #content-2 {
+	@include columns(1);
+}
+
+@media #{$from-phablet} {
+	#content-1 div {
+		@include columns(2, $target: "p");
+	}
+}
+
+@media #{$from-tablet} {
+	#content-1 {
+		@include columns((1,2));
+	}
+	#content-2 {
+		@include columns((2,1));
+	}
+}
+
+// Footer
+footer {
+	@include columns(2);
+	border-top: solid 1px setting("color","border-2");
+	testing: $is-phablet;
+}
+
+footer ul {
+	@include link-list();
+	text-align: right;
+}
