@@ -1,10 +1,8 @@
 .DS_Store
 .settings
-*.css.map
-*/*.css.map
+**/*.css.map
 .dropbox
 desktop.ini
-*.css
-*/*.css
+**/*.css
 koala-config.json
 *.zip
