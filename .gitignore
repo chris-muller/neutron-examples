@@ -8,4 +8,4 @@ koala-config.json
 *.zip
 *.css
 
-*.map
+*.css.map
