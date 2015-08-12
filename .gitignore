@@ -1,6 +1,6 @@
 .DS_Store
 .settings
-*.css.map
+*.map
 .dropbox
 desktop.ini
 *.css
